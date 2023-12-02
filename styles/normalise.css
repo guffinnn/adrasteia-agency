@@ -1,0 +1,10 @@
+/*ALL*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Gilroy", sans-serif;
+    text-decoration: none;
+    outline: none;
+    /*box-sizing: border-box;*/
+}

@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Adrasteia</title>
+    <link rel="stylesheet" type="text/css" href="./styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/normalise.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
 </head>
 <body>
 <header class="header">
     <div class="header__logo">
-        <img class="logo__image" alt="Logo" src="./assets/logo.svg" width="243" height="33" />
+        <img class="logo__image" alt="Logo" src="./assets/logo.svg" width="182" height="25" />
     </div>
     <nav class="header__nav">
         <ul class="header__list">
@@ -31,40 +34,33 @@
             </li>
         </ul>
     </nav>
-    <div class="header__button">
-        <span class="button__text">Оформить заявку</span>
-        <img class="header__svg" alt="Add" src="./assets/add_button.svg" width="34" height="34" />
-    </div>
+    <a class="header__button">Оформить заявку
+        <img class="header__svg" alt="Add" src="./assets/add_button.svg" width="28" height="28" />
+    </a>
 </header>
+<div class="header__divider"></div>
 <main>
     <section class="introduction">
         <article class="article__introduction">
-            <h1>Детективно-информационное агентство</h1>
+            <h1>Детективно-информационное <span class="agency">агентство</span></h1>
             <p class="text__introduction">Владеешь информацией - владеешь миром</p>
             <a class="application__button">Оформить заявку
-                <img class="introduction__svg" alt="Add" src="./assets/add_button.svg" width="41" height="41" />
+                <img class="introduction__svg" alt="Add" src="./assets/add_button.svg" width="30" height="30" />
             </a>
+            <aside class="aside__introduction">
+                <img class="composite" alt="Composite" src="./assets/introduction.svg" width="1047" height="708" />
+            </aside>
         </article>
-        <aside class="aside__introduction">
-            <div class="front__image">
-                <img class="front__svg" alt="Front" src="./assets/front_intro.svg" width="818" height="669" />
-            </div>
-            <div class="back__image">
-                <img class="back__svg" alt="Back" src="./assets/back_intro.svg" width="1195" height="916" />
-            </div>
-        </aside>
-        <div class="group__introduction">
-            <div class="to__bottom__button">
-                <img class="arrow__down" alt="Down" src="./assets/arrow_down.svg" width="24" height="24" />
-            </div>
-            <div class="chat__button">
-                <img class="whatsapp" alt="Chat" src="./assets/whatsapp.svg" width="24" height="24" />
-                <span class="whatsapp">whatsapp</span>
-                <div class="chat__divider"></div>
-                <a class="chat__email" href="#">Adrasteia@mail.com</a>
-            </div>
+        <div class="to__bottom__button">
+            <img class="arrow__down" alt="Down" src="./assets/arrow_down.svg" width="18" height="18" />
         </div>
     </section>
+    <div class="chat__button">
+        <img class="whatsapp" alt="Chat" src="./assets/whatsapp.svg" width="24" height="24" />
+        <span class="whatsapp">открыть чат</span>
+        <div class="chat__divider"></div>
+        <a class="chat__email" href="#">Adrasteia@mail.com</a>
+    </div>
     <section class="about__us">
         <div class="heading__frame">
             <h2 class="heading">Кто мы?</h2>
