@@ -223,9 +223,35 @@ h1 {
 }
 
 .illustration__about__us {
+    position: relative;
     display: flex;
     padding: 0 50px;
     justify-content: space-between;
+}
+
+.pins__route {
+    position: absolute;
+}
+
+.route1 {
+    position: absolute;
+    left: 91px;
+    top: 44px;
+    z-index: 4;
+}
+
+.route1__image {
+    width: 865px;
+}
+
+.route2 {
+    position: absolute;
+    left: 920px;
+    top: 40px;
+}
+
+.route2__image {
+
 }
 
 .note__frame {
@@ -264,6 +290,16 @@ h1 {
 
 .note {
     position: relative;
+}
+
+#note__pin {
+    position: absolute;
+    top: -34px;
+    left: 170px;
+}
+
+.pin__frame {
+    position: absolute;
 }
 
 .deg {
@@ -352,8 +388,14 @@ h1 {
 }
 
 .polaroid__frame {
+    position: relative;
     display: flex;
     flex-direction: column
+}
+
+#polaroid__pin {
+    top: 24px;
+    right: 4px;
 }
 
 .second {
@@ -372,11 +414,27 @@ h1 {
     width: 265px;
 }
 
+.tools__image {
+    position: relative;
+}
+
+#tools__pin {
+    left: 137px;
+    top: -51px;
+}
+
 .review__frame {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    margin: 48px 0;
+}
+
+#review__pin {
+    top: -30px;
+    left: 15px;
 }
 
 .fourth {
@@ -536,4 +594,99 @@ h1 {
 
 #slide5, #slide6 {
     visibility: hidden;
+}
+
+.methodology {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.method__article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    gap: 50px;
+}
+
+.method__head {
+    width: 507px;
+    color: #142251;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 84px */
+    letter-spacing: -3.36px;
+    text-align: left;
+}
+
+.flex__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.method__container {
+    position: relative;
+    padding: 20px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #989EB1;
+    background: #FFF;
+}
+
+.numeric__text {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #989EB1;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 20px */
+    letter-spacing: -0.6px;
+    opacity: 60%;
+}
+
+.method__frame {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.text__method {
+    color: #989EB1;
+    font-family: "Gilroy Medium", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 36px */
+    letter-spacing: -0.9px;
+}
+
+.method__aside {
+
+}
+
+.method1, .method2, .method3 {
+    width: 253px;
+}
+
+.back__svg {
+
 }

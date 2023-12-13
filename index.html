@@ -67,14 +67,19 @@
             <p class="text__about">О нас не пишут рейтинговые агентства и поисковые системы</p>
         </div>
         <div class="illustration__about__us">
-            <!--<div class="pins">
-                <img class="pin__image" alt="Pin" src="./assets/pin.svg" />
-                <img class="pin__image" alt="Pin" src="./assets/pin.svg" />
-                <img class="pin__image" alt="Pin" src="./assets/pin.svg" />
-                <img class="pin__image" alt="Pin" src="./assets/pin.svg" />
-            </div>-->
+            <div class="pins__route">
+                <div class="route1">
+                    <img class="route1__image" alt="Route" src="./assets/route_pins.svg" />
+                </div>
+                <div class="route2">
+                    <img class="route2__image" alt="Route" src="./assets/route_pin2.svg" />
+                </div>
+            </div>
             <div class="note__frame">
                 <div class="note">
+                    <div class="pin__frame" id="note__pin">
+                        <img class="pin__image" alt="Pin" src="./assets/pin.svg" width="32" />
+                    </div>
                     <div class="header__of__note">
                         <div class="left__frame">
                             <img class="deg note__clip" alt="Icon" src="./assets/clip.svg" width="24" />
@@ -101,6 +106,9 @@
             </div>
             <div class="polaroid__frame">
                 <div class="polaroid__image">
+                    <div class="pin__frame" id="polaroid__pin">
+                        <img class="pin__image" alt="Pin" src="./assets/pin.svg" width="32" />
+                    </div>
                     <img class="polaroid" alt="Image" src="./assets/polaroid.svg" width="295" />
                 </div>
                 <span class="second description__service"><span class="number">2.</span> Применяем агентскую сеть по всему миру</span>
@@ -108,11 +116,17 @@
             <div class="tools__frame">
                 <span class="third description__service"><span class="number">3.</span> Используем арсенал профессиональных технических средству</span>
                 <div class="tools__image">
+                    <div class="pin__frame" id="tools__pin">
+                        <img class="pin__image" alt="Pin" src="./assets/pin.svg" width="32" />
+                    </div>
                     <img class="tools" alt="Tools" src="./assets/tools.svg" width="335" />
                 </div>
             </div>
             <div class="review__frame">
                 <div class="stars__image">
+                    <div class="pin__frame" id="review__pin">
+                        <img class="pin__image" alt="Pin" src="./assets/pin.svg" width="32" />
+                    </div>
                     <img class="stars" alt="Stars" src="./assets/stars.svg" width="216" />
                 </div>
                 <span class="fourth description__service"><span class="number">4. </span> Считаем что репутация важнее денег</span>
@@ -232,26 +246,28 @@
     </section>
     <section class="methodology">
         <article class="method__article">
-            <h2 class="heading">Как мы работаем</h2>
-            <div class="method__container">
-                <span class="numeric__text">01</span>
-                <div class="method__text">
-                    <img class="arrow" alt="Icon" src="./assets/arrow_right.svg" width="41" />
-                    <p class="text">Разбираемся в ситуации</p>
+            <h2 class="heading method__head">Как мы работаем</h2>
+            <div class="flex__container">
+                <div class="method__container">
+                    <span class="numeric__text">01</span>
+                    <div class="method__frame">
+                        <img class="arrow" alt="Icon" src="./assets/arrow_right.svg" width="32"/>
+                        <p class="text__method">Разбираемся в ситуации</p>
+                    </div>
                 </div>
-            </div>
-            <div class="method__container">
-                <span class="numeric__text">02</span>
-                <div class="method__text">
-                    <img class="check" alt="Icon" src="./assets/clipboard_check.svg" width="41" />
-                    <p class="text">Составляем план действий</p>
+                <div class="method__container">
+                    <span class="numeric__text">02</span>
+                    <div class="method__frame">
+                        <img class="check" alt="Icon" src="./assets/clipboard_check.svg" width="32" />
+                        <p class="text__method">Составляем план действий</p>
+                    </div>
                 </div>
-            </div>
-            <div class="method__container">
-                <span class="numeric__text">03</span>
-                <div class="method__text">
-                    <img class="check" alt="Icon" src="./assets/check.svg" />
-                    <p class="text">Предоставляем результат</p>
+                <div class="method__container">
+                    <span class="numeric__text">03</span>
+                    <div class="method__frame">
+                        <img class="check" alt="Icon" src="./assets/check.svg" width="24" />
+                        <p class="text__method">Предоставляем результат</p>
+                    </div>
                 </div>
             </div>
         </article>
