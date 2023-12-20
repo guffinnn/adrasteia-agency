@@ -680,7 +680,39 @@ h1 {
 }
 
 .method__aside {
+    position: relative;
+}
 
+.methods__container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 600px;
+    gap: 10px;
+}
+
+.container__method {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.end {
+    align-items: flex-end;
+}
+
+.center {
+    align-items: stretch;
+    margin-left: -25px;
+    z-index: -5;
+}
+
+.start {
+    align-items: flex-start;
+    margin-left: -25px;
+    z-index: -10;
 }
 
 .method1, .method2, .method3 {
@@ -688,5 +720,9 @@ h1 {
 }
 
 .back__svg {
-
+    width: 1205px;
+    position: absolute;
+    right: -230px;
+    top: 0;
+    z-index: -20;
 }
