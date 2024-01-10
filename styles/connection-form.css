@@ -1,0 +1,238 @@
+.connection__form {
+    width: 1420px;
+    margin: auto;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 70px;
+}
+
+.form__heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.to__bottom__button {}
+
+.arrow__down {}
+
+.form__main {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 50px;
+    row-gap: 75px;
+}
+
+.block {
+    width: 45%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 18px;
+    row-gap: 8px;
+}
+
+.form__label {
+    width: 120px;
+    color: #142251;
+    font-family: "Gilroy Medium", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 34px */
+    letter-spacing: -1.02px;
+}
+
+.form__input::-webkit-input-placeholder {
+    font-family: "Gilroy", sans-serif;
+    color: #989EB1;
+}
+
+.form__input {
+    width: 75%;
+    position: relative;
+    font-family: "Gilroy Medium", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 34px */
+    letter-spacing: -1.02px;
+    padding: 5px 0 4px 0;
+    border-bottom: 1px solid #989EB1;
+    color: #213887;
+}
+
+.submit__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.decoration {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.check { }
+
+.subtext {
+    width: 150px;
+    color: #989EB1;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: -0.54px;
+}
+
+.form__application__button {
+    display: inline-flex;
+    padding: 15px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    background: rgba(33, 56, 135, 0.06);
+    color: #213887;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.72px;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+@media(max-width: 1520px) {
+    /*CONNECTION FORM*/
+    .connection__form {
+        width: 1200px;
+    }
+
+    .form__input {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1200px) {
+    /*CONNECTION FORM*/
+    .connection__form {
+        width: 980px;
+    }
+}
+
+@media(max-width: 980px) {
+    /*CONNECTION FORM*/
+    .connection__form {
+        width: 720px;
+    }
+
+    .form {
+        gap: 45px;
+    }
+}
+
+@media(max-width: 720px) {
+    /*CONNECTION FORM HEAD*/
+    .heading {
+        font-size: 48px;
+    }
+
+    /*CONNECTION FORM*/
+    .connection__form {
+        width: 480px;
+        gap: 40px;
+    }
+
+    .form {
+        row-gap: 30px;
+    }
+
+    .block {
+        width: 100%;
+    }
+}
+
+@media(max-width: 480px) {
+    /*CONNECTION FORM HEAD*/
+    .heading {
+        text-align: left;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 85%; /* 34px */
+        letter-spacing: -1.6px;
+    }
+
+    /*BUTTON ARROW DOWN*/
+    .to__bottom__button {
+        display: none;
+    }
+
+    /*CONNECTION FORM*/
+    .connection__form {
+        width: -webkit-fill-available;
+        margin: 0 20px;
+        gap: 40px;
+    }
+
+    /*CONNECTION FORM ELEMS*/
+    .form__label {
+        display: none;
+    }
+
+    .form {
+        row-gap: 30px;
+    }
+
+    .form__application__button {
+        width: -webkit-fill-available;
+    }
+
+    .submit__container {
+        width: -webkit-fill-available;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-around;
+        align-items: flex-start;
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+}
+
+@media(max-width: 360px) {  }
