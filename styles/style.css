@@ -135,6 +135,10 @@ main {
     .chat__button {
         display: none;
     }
+
+    main {
+        gap: 30px;
+    }
 }
 
 @media(max-width: 480px) {
