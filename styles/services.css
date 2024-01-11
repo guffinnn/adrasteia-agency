@@ -1,14 +1,15 @@
 .services {
-    margin: 0 50px;
-    width: 1420px;
-    flex-shrink: 0;
-    border-radius: 40px;
-    background: #F3F6F9;
+    width: 100%;
+    padding: 50px 0;
+    position: relative;
 }
 
 .services__container {
-    height: 664px;
-    position: relative;
+    width: 1420px;
+    margin: auto;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #F3F6F9;
 }
 
 .about {
@@ -57,9 +58,11 @@
 
 .slider {
     padding: 50px 10px 10px 10px;
+    overflow: hidden;
 }
 
 .slides__container {
+    height: 480px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -149,28 +152,99 @@
     width: 24px;
 }
 
-#slide5, #slide6 {
-    visibility: hidden;
-}
-
 @media(max-width: 1520px) {
-
+    /*CONTAINER*/
+    .services__container {
+        width: 1200px;
+    }
 }
 
 @media(max-width: 1200px) {
-
+    /*CONTAINER*/
+    .services__container {
+        width: 980px;
+    }
 }
 
 @media(max-width: 980px) {
-
+    /*CONTAINER*/
+    .services__container {
+        width: 720px;
+    }
 }
 
 @media(max-width: 720px) {
+    /*CONTAINER*/
+    .services__container {
+        width: 480px;
+        height: 655px;
+        padding-bottom: 20px;
+        overflow: hidden;
+    }
 
+    .heading__group {
+        padding: 30px 20px 20px;
+        margin: 0 0 0 15px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        gap: 20px;
+    }
+
+    .about {
+        text-align: start;
+    }
+
+    .switcher {
+        display: none;
+    }
+
+    .slider {
+        padding: 0 20px 20px;
+    }
+
+    .slides__container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .slide, .slide__image {
+        width: 100%;
+    }
+
+    .slide {
+        gap: 15px;
+        border-radius: 42px;
+    }
+
+    .slide__heading {
+        font-size: 18px;
+    }
+
+    .services__button {
+        width: -webkit-fill-available;
+        box-sizing: border-box;
+        padding: 18px 35px;
+        border-radius: 14px;
+    }
+
+    .slide__info {
+        gap: 20px
+    }
 }
 
 @media(max-width: 480px) {
+    /*CONTAINER*/
+    .services__container {
+        width: 360px;
+        height: 575px;
+    }
 
+    .services {
+        padding: 0;
+    }
 }
 
 @media(max-width: 360px) {  }

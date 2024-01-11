@@ -260,12 +260,20 @@
         line-height: 120%; /* 24px */
         letter-spacing: -0.6px;
     }
+
+    .submit__container, .form__application__button {
+        width: 100%;
+    }
 }
 
 @media(max-width: 480px) {
     /*CONTAINER*/
     .methodology__fluid {
         width: 360px;
+    }
+
+    .methodology {
+        padding: 0;
     }
 }
 

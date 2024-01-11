@@ -184,11 +184,16 @@
     .block {
         width: 100%;
     }
+
+    .subtext {
+        display: none;
+    }
 }
 
 @media(max-width: 480px) {
     /*CONNECTION FORM HEAD*/
     .heading {
+        width: fit-content;
         text-align: left;
         font-size: 40px;
         font-style: normal;
