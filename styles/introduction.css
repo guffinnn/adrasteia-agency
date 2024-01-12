@@ -1,6 +1,12 @@
 .introduction {
     position: relative;
-    padding: 70px 50px 50px;
+    width: 100%;
+    padding: 70px 0 0;
+}
+
+.intro__fluid {
+    width: 1400px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -11,7 +17,7 @@
 .article__introduction { }
 
 h1 {
-    width: 580px;
+    width: min-content;
     font-family: "Gilroy Medium", sans-serif;
     color: #142251;
     font-size: 75px;
@@ -61,9 +67,10 @@ h1 {
 }
 
 .aside__introduction {
+    width: fit-content;
     position: absolute;
     top: -70px;
-    left: 523px;
+    right: 30px;
     z-index: 0;
 }
 
@@ -75,23 +82,135 @@ h1 {
 }
 
 @media(max-width: 1520px) {
+    /*CONTAINER*/
+    .intro__fluid {
+        width: 1200px;
+    }
 
+    .aside__introduction {
+        scale: 0.8;
+        right: -90px;
+    }
 }
 
 @media(max-width: 1200px) {
+    /*CONTAINER*/
+    .intro__fluid {
+        width: 980px;
+    }
 
+    .aside__introduction {
+        scale: 0.6;
+        right: -190px;
+    }
 }
 
 @media(max-width: 980px) {
+    /*CONTAINER*/
+    .intro__fluid {
+        width: 720px;
+        gap: 40px;
+    }
 
+    .introduction {
+        padding-top: 50px;
+    }
+
+    h1, .agency {
+        font-size: 64px;
+    }
+
+    .aside__introduction {
+        display: block;
+        position: relative;
+        scale: 1;
+        right: 0;
+        top: 0;
+    }
+
+    .composite {
+        width: 100%;
+    }
 }
 
 @media(max-width: 720px) {
+    /*CONTAINER*/
+    .intro__fluid {
+        width: 480px;
+    }
 
+    h1, .agency {
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 85%; /* 34px */
+        letter-spacing: -1.6px;
+        margin-bottom: 20px;
+    }
+
+    .text__introduction {
+        font-size: 20px;
+    }
+
+    .application__button {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 14px */
+        letter-spacing: -0.42px;
+    }
+
+    .introduction__svg {
+        width: 28px;
+    }
 }
 
 @media(max-width: 480px) {
+    /*CONTAINER*/
+    .intro__fluid {
+        width: 360px;
+    }
 
+    .introduction {
+        padding-top: 30px;
+    }
+
+    h1, .agency {
+        font-size: 42px;
+    }
+
+    .text__introduction {
+        font-size: 16px;
+    }
+
+    .application__button {
+        box-sizing: border-box;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        font-size: 14px;
+        margin-top: 40px;
+    }
+
+    .introduction__svg {
+        width: 24px;
+    }
 }
 
-@media(max-width: 360px) {  }
+@media(max-width: 360px) {
+    h1, .agency {
+        font-size: 36px;
+    }
+
+    .intro__fluid {
+        width: -webkit-fill-available;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    .application__button {
+        margin-top: 5px;
+    }
+}

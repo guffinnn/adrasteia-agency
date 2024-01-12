@@ -139,6 +139,10 @@ main {
     main {
         gap: 30px;
     }
+
+    .to__bottom__button {
+        display: none;
+    }
 }
 
 @media(max-width: 480px) {
@@ -146,6 +150,12 @@ main {
     .header__button {
         display: none;
     }
+
+    .logo__image {
+        width: 132px;
+    }
 }
 
-@media(max-width: 360px) {  }
+@media(max-width: 360px) {
+
+}

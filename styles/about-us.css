@@ -440,4 +440,14 @@
     }
 }
 
-@media(max-width: 360px) {  }
+@media(max-width: 360px) {
+    .about__us__fluid {
+        width: -webkit-fill-available;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    .tools, .stars {
+        width: 80px;
+    }
+}

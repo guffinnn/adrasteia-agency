@@ -251,4 +251,16 @@
     }
 }
 
-@media(max-width: 360px) {  }
+@media(max-width: 360px) {
+    .services__fluid {
+        width: -webkit-fill-available;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    .services__container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}

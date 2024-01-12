@@ -149,6 +149,23 @@
     .methods__container {
         scale: 0.8;
     }
+
+    .back__svg__frame {
+        width: 1200px;
+        height: 790px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -20;
+        object-fit: cover;
+    }
+
+    .back__svg {
+        width: 100%;
+        position: absolute;
+        right: -180px;
+        scale: 0.8;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -188,12 +205,8 @@
     }
 
     /*BIG IMAGE*/
-    .back__svg {
-        width: 1800px;
-        position: absolute;
-        right: -720px;
-        top: -190px;
-        scale: 0.6;
+    .back__svg__frame {
+        display: none;
     }
 }
 
@@ -277,4 +290,18 @@
     }
 }
 
-@media(max-width: 360px) {  }
+@media(max-width: 360px) {
+    .methodology__fluid {
+        width: -webkit-fill-available;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    .text__method {
+        font-size: 18px;
+    }
+
+    .method1, .method2, .method3 {
+        width: 60px;
+    }
+}
