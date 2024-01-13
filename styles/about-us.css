@@ -285,7 +285,7 @@
     }
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1240px) {
     /*CONTAINER*/
     .about__us__fluid {
         width: 980px;
@@ -299,7 +299,7 @@
     }
 }
 
-@media(max-width: 980px) {
+@media(max-width: 1020px) {
     /*CONTAINER*/
     .about__us__fluid {
         width: 720px;
@@ -374,7 +374,7 @@
     }
 }
 
-@media(max-width: 720px) {
+@media(max-width: 760px) {
     /*CONTAINER*/
     .about__us__fluid {
         width: 480px;
@@ -417,7 +417,7 @@
     }
 }
 
-@media(max-width: 480px) {
+@media(max-width: 520px) {
     /*CONTAINER*/
     .about__us__fluid {
         width: 360px;
@@ -440,7 +440,7 @@
     }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 400px) {
     .about__us__fluid {
         width: -webkit-fill-available;
         box-sizing: border-box;

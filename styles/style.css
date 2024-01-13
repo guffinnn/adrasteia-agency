@@ -1,5 +1,10 @@
+.back__svg__frame, .group__graphic {
+    display: none;
+}
+
 /*HEADER*/
 .header {
+    width: auto;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -119,18 +124,22 @@ main {
 
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1240px) {
 
 }
 
-@media(max-width: 980px) {
+@media(max-width: 1020px) {
     /*HEADER*/
-    .header__list {
+    .header__nav {
+        display: none;
+    }
+
+    .chat__button {
         display: none;
     }
 }
 
-@media(max-width: 720px) {
+@media(max-width: 760px) {
     /*CHAT*/
     .chat__button {
         display: none;
@@ -145,7 +154,7 @@ main {
     }
 }
 
-@media(max-width: 480px) {
+@media(max-width: 520px) {
     /*HEADER*/
     .header__button {
         display: none;
@@ -156,6 +165,6 @@ main {
     }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 400px) {
 
 }

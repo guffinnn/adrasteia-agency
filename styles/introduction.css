@@ -5,13 +5,14 @@
 }
 
 .intro__fluid {
+    position: relative;
     width: 1400px;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 150px;
+    gap: 280px;
 }
 
 .article__introduction { }
@@ -69,8 +70,8 @@ h1 {
 .aside__introduction {
     width: fit-content;
     position: absolute;
-    top: -70px;
-    right: 30px;
+    top: -95px;
+    right: 0;
     z-index: 0;
 }
 
@@ -85,27 +86,32 @@ h1 {
     /*CONTAINER*/
     .intro__fluid {
         width: 1200px;
+        gap: 140px;
     }
 
     .aside__introduction {
+        top: -150px;
+        right: -100px;
         scale: 0.8;
-        right: -90px;
     }
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1240px) {
     /*CONTAINER*/
     .intro__fluid {
         width: 980px;
+        gap: 45px;
     }
 
     .aside__introduction {
+        top: -210px;
+        right: -207px;
         scale: 0.6;
-        right: -190px;
+        z-index: -20;
     }
 }
 
-@media(max-width: 980px) {
+@media(max-width: 1020px) {
     /*CONTAINER*/
     .intro__fluid {
         width: 720px;
@@ -123,9 +129,10 @@ h1 {
     .aside__introduction {
         display: block;
         position: relative;
-        scale: 1;
-        right: 0;
         top: 0;
+        right: 0;
+        scale: 1;
+        margin: -72px 0;
     }
 
     .composite {
@@ -133,7 +140,7 @@ h1 {
     }
 }
 
-@media(max-width: 720px) {
+@media(max-width: 760px) {
     /*CONTAINER*/
     .intro__fluid {
         width: 480px;
@@ -152,6 +159,10 @@ h1 {
         font-size: 20px;
     }
 
+    .aside__introduction {
+        margin: -40px 0;
+    }
+
     .application__button {
         font-size: 16px;
         font-style: normal;
@@ -165,7 +176,7 @@ h1 {
     }
 }
 
-@media(max-width: 480px) {
+@media(max-width: 520px) {
     /*CONTAINER*/
     .intro__fluid {
         width: 360px;
@@ -181,6 +192,10 @@ h1 {
 
     .text__introduction {
         font-size: 16px;
+    }
+
+    .aside__introduction {
+        margin: -30px 0;
     }
 
     .application__button {
@@ -199,7 +214,7 @@ h1 {
     }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 400px) {
     h1, .agency {
         font-size: 36px;
     }
@@ -208,6 +223,10 @@ h1 {
         width: -webkit-fill-available;
         box-sizing: border-box;
         padding: 0 20px;
+    }
+
+    .aside__introduction {
+        margin: -30px 0 -5px;
     }
 
     .application__button {
