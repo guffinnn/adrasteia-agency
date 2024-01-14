@@ -149,8 +149,8 @@
     /*ABSOLUTE IMAGE*/
     .group__graphic {
         scale: 0.8;
-        right: -134px;
-        bottom: -66px;
+        right: -120px;
+        bottom: -68px;
     }
 }
 
@@ -198,7 +198,7 @@
     /*ABSOLUTE IMAGE*/
     .group__graphic {
         scale: 0.7;
-        right: -195px;
+        right: -180px;
         bottom: -100px;
     }
 }
@@ -221,7 +221,7 @@
     /*ABSOLUTE IMAGE*/
     .group__graphic {
         scale: 0.5;
-        right: -315px;
+        right: -300px;
         bottom: -164px;
     }
 }
@@ -265,7 +265,7 @@
     /*ABSOLUTE IMAGE*/
     .group__graphic {
         scale: 0.3;
-        right: -435px;
+        right: -420px;
         bottom: -230px;
     }
 }
@@ -285,5 +285,9 @@
         align-content: center;
         justify-content: center;
         align-items: center;
+    }
+
+    .group__graphic {
+        display: none;
     }
 }

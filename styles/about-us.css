@@ -321,52 +321,51 @@
         width: 100%;
     }
 
-    .icon, .pin__frame {
+    .icon, .pin__frame, .number {
         display: none;
     }
 
     .second, .third, .fourth {
-        width: auto;
+        width: 50%;
         margin: 0;
     }
 
     .polaroid__frame, .tools__frame, .review__frame {
+        width: 100%;
+        height: 225px;
         margin: 0;
         box-sizing: border-box;
         position: relative;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: space-around;
         align-content: center;
         padding: 40px 60px;
-        width: 100%;
-        height: 100%;
         flex-shrink: 0;
         border-radius: 18px;
         background: #F2F3F8;
         column-gap: 30px;
     }
 
+    .polaroid__image, .tools__image, .stars__image {
+        width: 50%;
+        height: 100%;
+    }
+
     .not__mobile {
         display: none;
     }
 
-    .mobile {
+    .mobile, .tools, .stars {
+        width: 100%;
+        height: 100%;
         display: block;
     }
 
     .description__service {
         font-size: 24px;
-    }
-
-    .polaroid {
-        width: 122px;
-    }
-
-    .tools, .stars {
-        width: 175px;
     }
 
     .img__ell {
@@ -386,11 +385,8 @@
     }
 
     .polaroid__frame, .tools__frame, .review__frame {
+        height: 168px;
         padding: 20px;
-    }
-
-    .polaroid {
-        width: 98px;
     }
 
     .note__frame {
@@ -445,9 +441,5 @@
         width: -webkit-fill-available;
         box-sizing: border-box;
         padding: 0 20px;
-    }
-
-    .tools, .stars {
-        width: 80px;
     }
 }
