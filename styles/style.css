@@ -44,6 +44,19 @@ header.header::after {
     font-weight: 600;
     line-height: 100%; /* 20px */
     letter-spacing: -0.6px;
+
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size .3s;
+
+    padding-bottom: 5px;
+}
+
+a.header__link:hover {
+    background-size: 100% 2px;
 }
 
 .header__button {
@@ -51,16 +64,23 @@ header.header::after {
     justify-content: center;
     align-items: center;
     gap: 12px;
+
     color: #213887;
+
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
     line-height: 100%; /* 20px */
     letter-spacing: -0.6px;
+
     cursor: pointer;
 }
 
 .header__svg { }
+
+.form__button {
+    cursor: pointer;
+}
 
 /*MAIN*/
 main {
